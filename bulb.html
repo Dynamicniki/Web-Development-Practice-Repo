@@ -1,0 +1,16 @@
+<img src="OFF.jpg" id="light">
+<button id="swich" onclick="swich()">ON</button>
+<script type="text/javascript">
+	let light=document.getElementById('light');
+	let sweech=document.getElementById('swich');
+
+	function swich(){
+		if(sweech.innerHTML=="OFF"){
+			light.src="OFF.jpg";
+			sweech.innerHTML="ON";
+		}else{
+			light.src="ON.jpg";
+			sweech.innerHTML="OFF";
+		}
+	}
+</script>
